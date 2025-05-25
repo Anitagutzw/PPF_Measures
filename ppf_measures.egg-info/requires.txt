@@ -1,4 +1,0 @@
-mpmath
-ppf_approx
-numpy
-scipy
