@@ -12,6 +12,7 @@ setup(
         'ppf_approx',
         'numpy',
         'scipy',
+        'multires'
     ],
     classifiers=[
         'Programming Language :: Python :: 3',
