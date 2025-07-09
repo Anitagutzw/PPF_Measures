@@ -4,3 +4,4 @@ This repository contains the Python code and resources related to the Master's t
 The thesis introduces a novel mathematical framework that bridges stochastic process theory, coherent risk measures, and clinical decision-making to address timing-related uncertainties in medical treatment, particularly focusing on drug resistance.
 
 # Installation
+pip install ppf_measures
