@@ -92,5 +92,5 @@ simulate_var_tvar(v, D, x0, eps, eul_dt, p, r_values, n_samples, max_fail_ratio)
 
 **Returns:**
 
-  * `var_values` (list of float): Value at Risk values for each `r`. VaR represents the maximum possible loss over a specific time horizon at a given confidence level.
-  * `tvar_values` (list of float): Tail Value at Risk values for each `r`. TVaR, also known as Conditional Value at Risk (CVaR), is the expected loss given that the loss is greater than or equal to the VaR.
+  * `var_values` (list of float): Value at Risk values for each `r` at given level `p`.
+  * `tvar_values` (list of float): Tail Value at Risk values for each `r` at given level `p`.
