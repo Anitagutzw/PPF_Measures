@@ -1,5 +1,5 @@
 # PPF-Measures
-This repository contains the Python code and resources related to the Master's thesis "Quantitative Measures of Drug Resistance Using Stochastic Processes" by Anita Gutzwiller, supervised by Prof. Dr. Riccardo Gatto at the University of Bern.
+This repository contains the Python code and resources related to the Master thesis "Quantitative Measures of Drug Resistance Using Stochastic Processes" by Anita Gutzwiller, supervised by Prof. Dr. Riccardo Gatto at the University of Bern.
 
 The thesis introduces a novel mathematical framework that bridges stochastic process theory, coherent risk measures, and clinical decision-making to address timing-related uncertainties in medical treatment, particularly focusing on drug resistance.
 
@@ -9,7 +9,10 @@ pip install ppf_measures
 ```
 
 # Usage
-The are three main functions in this package. For the computation of the two measure value at risk and tail value at risk using the FPT approximation the following two functions are used:
+There are three main functions in this package for computing Value at Risk (VaR) and Tail Value at Risk (TVaR).
+
+### PPF Approximation
+For the computation of VaR and TVaR using the PPF approximation:
 
 ```
 value_at_risk(m_ord, n_ord, v, D, x0, r, tval, p, tol=1e-12, maxiter=500)
@@ -31,7 +34,11 @@ Here is a description of each argument:
 - tol : Float, optional. The tolerance for convergence. Default is 1e-12.
 - maxiter : Integer, optional. The maximum number of iterations for Newton-Raphson. Default is 500.
 
+The outputs for both functions will always be in arrays.
+
 For the computation of the two measures using the hmra simulation the following function is used:
+
+### HMRA Simulation
 
 ```
 simulate_var_tvar(v, D, x0, eps, eul_dt, p, r_values, n_samples, max_fail_ratio)
@@ -48,5 +55,7 @@ Here is a description of each argument:
 - n_samples : Int. Number of simulation samples per r.
 - max_fail_ratio : Float. Maximum allowed ratio of failed samples for a valid result.
 
+The outputs will always be in arrays.
+
 # Pre-requisites
-To use this package wou need to pre-install the package ```ppf_approx```, refer to [jarmsmagalang](https://github.com/jarmsmagalang/ppf_approx).
+To use this package wou need to pre-install the package ```ppf_approx```. For the installation refer to [jarmsmagalang](https://github.com/jarmsmagalang/ppf_approx).
